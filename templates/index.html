@@ -1149,17 +1149,10 @@
                         </div>
                     </div>
                 </div>
-                 <div class="col-span-12 lg:col-span-12 xxl:col-span-6">
-                    <div class="box">
-                        <div class="box-header">
-                            <h5 class="box-title">
-                                Pie Chart
-                            </h5>
-                        </div>
-                        <div class="box-body">
-                            <div id="echart-pie" class="echart-charts"></div>
-                        </div>
-                    </div>
+                <div class="col-span-12 lg:col-span-12 xxl:col-span-6">
+                    {% block chart %}
+                        {% include 'component/chart.html' %}
+                    {% endblock chart %}
                 </div>
             </div>
             <!-- End::row-1 -->
@@ -1619,8 +1612,8 @@
         </div>
     </div>
     <!-- ========== END Search Modal ========== -->
-    
-       <!-- ========== Search Modal ========== -->
+
+    <!-- ========== Search Modal ========== -->
     <div id="search-modal" class="hs-overlay ti-modal hidden">
         <div class="ti-modal-box">
             <div class="ti-modal-content">

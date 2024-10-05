@@ -1,1 +1,1 @@
-from .ReceiptForm import ProductForm
+from .ReceiptForm import ReceiptForm
